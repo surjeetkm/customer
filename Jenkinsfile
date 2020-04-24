@@ -1,6 +1,6 @@
 node{
 	stage("Git clone"){
-		git credentialsId: 'GITHUB_CREDENTIALS', url: 'https://github.com/surjeetkm/istiotest.git'
+		git credentialsId: 'GITHUB_CREDENTIALS', url: 'https://github.com/surjeetkm/customer.git'
 	}
 	stage("Build Artifact"){
 		def mavenHome = tool name : "Maven", type: "maven"
